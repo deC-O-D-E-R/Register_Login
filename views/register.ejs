@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-color: #8BC6EC;
+         background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub-con{
+        width: 25%;
+        height: 70%;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px black;
+    }
+    h1{
+    margin-bottom: 10px;
+    }
+    .name , .email , .password {
+        padding: 10px;
+        font-weight: bold;
+        font-size:large;
+    }
+    input{
+        font-size:medium;
+    }
+    button{
+        margin-top: 20px;
+        margin-left: 120px;
+        padding: 5px;
+        font-weight: bold;
+        font-size:small;
+        border-radius: 8px;
+        box-shadow: 1px 1px 1px black;
+        cursor: pointer;
+    }
+
+    </style>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <div class="sub-con">
+            <form action="/" method="post">
+            <div class="name">
+                <label for="name" id="name">Name:</label>
+                <input type="text" id="name" name="input_name"  placeholder="enter name">
+            </div>
+            <div class="email">
+                <label for="email" id="email">Email:</label>
+                <input type="email" id="email" name="input_email" placeholder="enter email">
+            </div>
+            <div class="password">
+                <label for="password" id="password">Password:</label>
+                <input type="password" id="password" name="input_password" placeholder="set password">
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
